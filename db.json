@@ -1,0 +1,26 @@
+{
+    "birthday":[
+        {
+            "id": "0",
+            "task": "How many different products do we sell at ZTC?",
+            "completed": false
+        },
+        {
+            "id": "1",
+            "task": "How many different products do we sell at ZTC?",
+            "completed": false
+        },
+        {
+            "id": "2",
+            "task": "How many different products do we sell at ZTC?",
+            "completed": false
+        }
+
+    ],
+    "restaurants": [
+        {
+            "id": "0",
+            "name": "L'Artusi"
+        }
+    ]
+}

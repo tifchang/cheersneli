@@ -7,13 +7,49 @@
   "author": "Render Developers",
   "license": "MIT",
   "private": false,
+  "type": "module",
   "scripts": {
-    "start": "node app.js"
+    "start": "ts-node app.js",
+    "dev": "nodemon app.js",
+    "cnode": "node --no-warnings --experimental-modules --es-module-specifier-resolution=node --loader ts-node/esm ",
+    "monitor": "yarn cnode ./resy-api/src/monitor.ts"
   },
   "dependencies": {
-    "express": "^4.16.3"
+    "@slack/bolt": "^3.11.3",
+    "axios": "^0.27.2",
+    "dayjs": "^1.11.3",
+    "dotenv": "^16.0.1",
+    "express": "^4.16.3",
+    "lowdb": "^3.0.0",
+    "moment": "^2.29.3",
+    "ngrok": "^4.3.1",
+    "node-schedule": "^2.1.0",
+    "nodemon": "^2.0.19",
+    "ts-node": "^10.8.1",
+    "twilio": "^3.77.2",
+    "typescript": "^4.7.3",
+    "winston": "^3.7.2"
   },
   "engines": {
     "node": ">=14"
+  },
+  "devDependencies": {
+    "@types/moment": "^2.13.0",
+    "@types/node": "^17.0.45",
+    "@types/node-schedule": "^2.1.0",
+    "@types/uuid": "^8.3.4",
+    "@typescript-eslint/eslint-plugin": "^5.27.1",
+    "@typescript-eslint/eslint-plugin-tslint": "^5.27.1",
+    "@typescript-eslint/parser": "^5.27.1",
+    "eslint": "^8.17.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "prettier": "^2.6.2",
+    "uuid": "^8.3.2"
   }
 }
